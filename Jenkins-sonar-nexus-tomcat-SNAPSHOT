@@ -34,6 +34,7 @@ pipeline{
                  repository: 'sample-snapshots', 
                  version: '8.2.0-SNAPSHOT'
             }
+            }
         stage("deploy-dev"){
             steps{
                 sshagent(['Tomcat2']) {
